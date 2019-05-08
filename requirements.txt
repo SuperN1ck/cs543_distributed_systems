@@ -1,3 +1,0 @@
-nemu
-python-unshare
-python-passfd

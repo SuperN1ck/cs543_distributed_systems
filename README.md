@@ -20,3 +20,28 @@ Then install all requierements requiered for this project
 ```
 $ pip install -r requirements.txt
 ```
+
+### Setting Up ns-3
+Follow the [official tutorial](https://www.nsnam.org/docs/tutorial/singlehtml/index.html#downloading-ns-3-using-git).
+This will take some time to download and install the package.
+
+First download the package
+```
+git clone https://gitlab.com/nsnam/ns-3-allinone.git
+cd ns-3-allinone
+python download.py
+```
+Then build it
+```
+./build.py --enable-examples --enable-tests
+```
+Tests (timely) can be run by
+```
+cd ns-3-dev
+./test.py
+```
+An example can be run by
+```
+cd ns-3-dev
+./waf --run hello-simulator
+```

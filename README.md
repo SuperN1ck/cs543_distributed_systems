@@ -45,3 +45,7 @@ An example can be run by
 cd ns-3-dev
 ./waf --run hello-simulator
 ```
+Or to run a python example located in `ns-3-allinone/ns-3-dev/examples/tutorial/` execute
+```
+./waf --pyrun examples/tutorial/first.py
+```

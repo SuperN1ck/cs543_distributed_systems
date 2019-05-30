@@ -49,3 +49,9 @@ Or to run a python example located in `ns-3-allinone/ns-3-dev/examples/tutorial/
 ```
 ./waf --pyrun examples/tutorial/first.py
 ```
+
+## Execution
+To execute run following in the `ns-3-allinone/ns-3-dev/`-directory
+```
+./waf --pyrun ../../main.py
+```

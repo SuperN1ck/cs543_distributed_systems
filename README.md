@@ -33,7 +33,7 @@ python download.py
 ```
 Then build it
 ```
-./build.py --enable-examples --enable-tests
+./build.py --enable-examples --enable-tests --enable-sudo
 ```
 Tests (timely) can be run by
 ```
@@ -49,9 +49,20 @@ Or to run a python example located in `ns-3-allinone/ns-3-dev/examples/tutorial/
 ```
 ./waf --pyrun examples/tutorial/first.py
 ```
-
+An example using [taps](https://www.nsnam.org/wiki/HOWTO_make_ns-3_interact_with_the_real_world) can be found here
+```
+./waf --pyrun ../../tap-wifi-virtual-machine.py
+```
+There is a bug in the code, you have to manually change [line 57](https://www.nsnam.org/doxygen/tap-wifi-virtual-machine_8py_source.html#l00057) to
+```
+wifiMac = ns.wifi.WifiMacHelper()
+```
 ## Execution
 To execute run following in the `ns-3-allinone/ns-3-dev/`-directory
 ```
 ./waf --pyrun ../../main.py
 ```
+
+
+Check this tomorrow:
+https://askubuntu.com/questions/765526/how-to-install-gtk2-0

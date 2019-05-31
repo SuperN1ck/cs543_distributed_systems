@@ -8,6 +8,10 @@
 ### Start Simulation
 print("Hello from Main, Replaying first.py")
 
+## https://www.nsnam.org/wiki/HOWTO_make_ns-3_interact_with_the_real_world
+## ns-3 TAP
+## https://github.com/mininet/mininet/wiki/Link-modeling-using-ns-3
+
 import ns.applications
 import ns.core
 import ns.internet

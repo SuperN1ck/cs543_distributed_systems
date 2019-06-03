@@ -2,3 +2,4 @@
 env/
 *.pyc
 ns-3-allinone/
+notebook/gt_bbox/*
